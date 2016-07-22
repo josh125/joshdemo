@@ -18,12 +18,14 @@ gem "paperclip", "~> 4.2"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro"
 gem 'devise'
+gem 'puma'
 
 
 
 group :production do 
 	gem 'pg'
 	gem 'rails_12factor'
+
 end
 
 group :development, :test do

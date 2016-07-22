@@ -109,6 +109,7 @@ GEM
       paperclip (>= 3.1, < 5)
     pg (0.18.4)
     pkg-config (1.1.7)
+    puma (3.5.2)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -197,6 +198,7 @@ DEPENDENCIES
   paperclip (~> 4.2)
   paperclip-dropbox (>= 1.1.7)
   pg
+  puma
   rails (= 4.2.6)
   rails_12factor
   sass-rails (~> 5.0)
