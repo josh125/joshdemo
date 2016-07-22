@@ -3,7 +3,6 @@ ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
-gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -19,6 +18,18 @@ gem "paperclip", "~> 4.2"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro"
 gem 'devise'
+
+
+
+group :production do 
+	gem 'pg'
+	gem 'rails_12factor'
+
+end
+
+group :development, :test do
+	gem 'sqlite3'
+end
 
 
 # Use jquery as the JavaScript library
